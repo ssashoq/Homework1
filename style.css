@@ -19,14 +19,12 @@ body {
   background-size: cover;
   background-position: center;
 }
-
 .header_title {
   width: 789px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-
 .header_title_big {
   font-weight: 700;
   font-size: 64px;
@@ -34,7 +32,6 @@ body {
   color: #FFFFFF;
   padding-top: 217px;
 }
-
 .header_title_text {
   font-weight: 300;
   font-size: 18px;
@@ -42,7 +39,6 @@ body {
   color: #FFFFFF;
   width: 481px;
 }
-
 .header_title_button {
   width: 234.06px;
   height: 48.6px;
@@ -66,13 +62,11 @@ body {
   background-size: cover;
   background-position: center;
 }
-
 .product_box {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
 }
-
 .product_for {
   grid-column: span 4;
   height: 300px;
@@ -85,22 +79,18 @@ body {
   justify-content: flex-end;
   padding-left: 32px;
 }
-
 .product_1 {
   background: url(./img/game_1.png);
   background-repeat: no-repeat;
 }
-
 .product_2 {
   background: url(./img/game_2.png);
   background-repeat: no-repeat;
 }
-
 .product_3 {
   background: url(./img/game_3.png);
   background-repeat: no-repeat;
 }
-
 .product_title {
   padding-bottom: 32px;
 }/*# sourceMappingURL=style.css.map */
