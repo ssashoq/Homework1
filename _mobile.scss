@@ -1,0 +1,60 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        height: 735px;
+
+        &_title {
+            grid-template-columns: repeat(4, 1fr);
+
+            &_big {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+                grid-column: span 4;
+                text-align: center;
+            }
+
+            &_text {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+                grid-column: span 4;
+                text-align: center;
+            }
+
+            &_button {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .product {
+        height: 1221px;
+
+        &_box {
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 16px;
+            padding-top: 127px;
+        }
+
+        &_1 {
+            background: url(./img/mobile/Game_1.png);
+            background-repeat: no-repeat;
+        }
+
+        &_2 {
+            background: url(./img/mobile/Game_2.png);
+            background-repeat: no-repeat;
+        }
+
+        &_3 {
+            background: url(./img/mobile/Game_3.png);
+            background-repeat: no-repeat;
+        }
+    }
+}
