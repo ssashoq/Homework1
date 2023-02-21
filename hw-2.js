@@ -40,3 +40,17 @@ alert(num);
 let age = Number(prompt('Сколько вам лет?'));
 alert(age);
 
+const user = {
+    name: 'unknown',
+    weight: 80,
+    isAdmin: true
+};
+
+let info = prompt("Какую информацию хотите узнать о пользователе?", "name", "weight");
+
+alert(user[info]);
+
+let nickname = prompt("Как Вас зовут?");
+
+alert(`Привет, ${nickname}!`)
+
