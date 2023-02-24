@@ -96,6 +96,41 @@ body {
   padding-bottom: 32px;
 }
 
+.content {
+  height: 800px;
+  background: url(./img/content_background_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.content_title_big {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.content_title_text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.content_title_button_style {
+  width: 234.06px;
+  height: 48.6px;
+  background: #9C0332;
+  border-radius: 30px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  border: none;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
