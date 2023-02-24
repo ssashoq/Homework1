@@ -1,12 +1,16 @@
+let a = 10;
+
+alert(a);
+
 let a = 20;
 
 alert(a);
 
-let iphone = 2007;
+const iphone = 2007;
 
 alert(iphone);
 
-let JS = 'JavaScript';
+const JS = 'JavaScript';
 
 alert(JS);
 
