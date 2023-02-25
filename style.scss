@@ -19,11 +19,11 @@ body {
     background-size: cover;
     background-position: center;
     
-        &_title {
-            display: grid;
-            grid-template-columns: repeat(12,1fr);
+    &_title {
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
 
-            &_big {
+        &_big {
                 font-weight: 700;
                 font-size: 64px;
                 line-height: 78px;
@@ -31,9 +31,9 @@ body {
                 margin-top: 217px;
                 color:#FFFFFF;
                 grid-column: span 8;
-            }
+        }
     
-            &_text {
+        &_text {
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 32px;
@@ -42,25 +42,32 @@ body {
                 margin-bottom: 44px;
                 grid-column: span 6;
                 height: 64px;
-            }
+        }
     
-            &_button {
+        &_button {
 
-                &_style {
-                    width: 234.06px;
-                    height: 48.6px;
-                    background: #9C0332;
-                    border-radius: 30px;
-                    font-family: 'Montserrat';
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 22px;
-                    color: #FFFFFF;
-                    box-sizing: border-box;
-                    border: none;
+            &_style {
+                width: 234.06px;
+                height: 48.6px;
+                background: #9C0332;
+                border-radius: 30px;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+                box-sizing: border-box;
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                    cursor: url(./img/cursor_button.svg), pointer;
+                    background: #EB443F;
+                    border-radius: 30px; 
                 }
             }
         }
+    }
 }
 
 
@@ -88,6 +95,13 @@ body {
         flex-wrap: nowrap;
         justify-content: flex-end;
         padding-left: 32px;
+
+        &:hover {
+            cursor: pointer;
+            cursor: url(./img/cursor_button.svg), pointer;
+            border-radius: 16px;
+            border: 3px solid #44D2FF;
+        }
     }
 
     &_1 {
@@ -121,7 +135,9 @@ body {
     gap: 32px;
 
     &_title {
-
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
         grid-column: span 6;
 
         &_big {
@@ -152,14 +168,24 @@ body {
                 color: #FFFFFF;
                 box-sizing: border-box;
                 border: none;
+
+                &:hover {
+                    cursor: pointer;
+                    cursor: url(./img/cursor_button.svg), pointer;
+                    background: #EB443F;
+                    border-radius: 30px;    
+                }
             }
         }
     }
 
-    &_svg {
+    &_svg { 
+        height: 333px;
         grid-column: span 5;
+        padding-left: 103px;
     }
 }
+
 
 @import 'mobile';
 
