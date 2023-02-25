@@ -188,4 +188,29 @@ body {
     background: url(./img/mobile/Game_3.png);
     background-repeat: no-repeat;
   }
+  .content {
+    height: 653px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .content_title {
+    grid-column: span 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .content_title_big {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .content_title_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .content_svg_1 {
+    width: 334px;
+  }
 }/*# sourceMappingURL=style.css.map */
