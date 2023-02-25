@@ -118,8 +118,11 @@ body {
     background-position: center;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
 
     &_title {
+
+        grid-column: span 6;
 
         &_big {
             font-weight: 700;
@@ -151,6 +154,12 @@ body {
                 border: none;
             }
         }
+    }
+
+    &_svg {
+
+        grid-column: span 5;
+
     }
 }
 

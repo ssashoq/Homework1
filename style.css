@@ -104,6 +104,10 @@ body {
   background-position: center;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+}
+.content_title {
+  grid-column: span 6;
 }
 .content_title_big {
   font-weight: 700;
@@ -129,6 +133,9 @@ body {
   color: #FFFFFF;
   box-sizing: border-box;
   border: none;
+}
+.content_svg {
+  grid-column: span 5;
 }
 
 @media (max-width: 767px) {
