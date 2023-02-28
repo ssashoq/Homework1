@@ -54,12 +54,7 @@ body {
   color: #FFFFFF;
   box-sizing: border-box;
   border: none;
-}
-.header_title_button_style:hover {
-  cursor: pointer;
-  cursor: url(./img/cursor_button.svg), pointer;
-  background: #EB443F;
-  border-radius: 30px;
+
 }
 
 .product {
@@ -85,12 +80,7 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-end;
   padding-left: 32px;
-}
-.product_for:hover {
-  cursor: pointer;
-  cursor: url(./img/cursor_button.svg), pointer;
-  border-radius: 16px;
-  border: 3px solid #44D2FF;
+
 }
 .product_1 {
   background: url(./img/game_1.png);
@@ -108,58 +98,6 @@ body {
   padding-bottom: 32px;
 }
 
-.content {
-  height: 800px;
-  background: url(./img/content_background_1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 32px;
-}
-.content_title {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-column: span 6;
-}
-.content_title_big {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 59px;
-  color: #FFFFFF;
-}
-.content_title_text {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
-  color: #FFFFFF;
-}
-.content_title_button_style {
-  width: 234.06px;
-  height: 48.6px;
-  background: #9C0332;
-  border-radius: 30px;
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #FFFFFF;
-  box-sizing: border-box;
-  border: none;
-}
-.content_title_button_style:hover {
-  cursor: pointer;
-  cursor: url(./img/cursor_button.svg), pointer;
-  background: #EB443F;
-  border-radius: 30px;
-}
-.content_svg {
-  height: 333px;
-  grid-column: span 5;
-  padding-left: 103px;
-}
 
 @media (max-width: 767px) {
   .center {
@@ -211,29 +149,5 @@ body {
     background: url(./img/mobile/Game_3.png);
     background-repeat: no-repeat;
   }
-  .content {
-    height: 653px;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-  }
-  .content_title {
-    grid-column: span 4;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-  .content_title_big {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-  }
-  .content_title_text {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .content_svg_1 {
-    width: 334px;
-  }
+
 }/*# sourceMappingURL=style.css.map */
