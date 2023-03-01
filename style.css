@@ -54,6 +54,7 @@ body {
   color: #FFFFFF;
   box-sizing: border-box;
   border: none;
+
 }
 
 .product {
@@ -79,6 +80,7 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-end;
   padding-left: 32px;
+
 }
 .product_1 {
   background: url(./img/game_1.png);
@@ -95,6 +97,7 @@ body {
 .product_title {
   padding-bottom: 32px;
 }
+
 
 @media (max-width: 767px) {
   .center {
@@ -146,4 +149,5 @@ body {
     background: url(./img/mobile/Game_3.png);
     background-repeat: no-repeat;
   }
+
 }/*# sourceMappingURL=style.css.map */
