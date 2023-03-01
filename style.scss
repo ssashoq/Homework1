@@ -5,7 +5,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-  }
+}
 
 .center {
     padding-left: calc(50% - 600px);
@@ -18,32 +18,32 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
     &_title {
         display: grid;
-        grid-template-columns: repeat(12,1fr);
+        grid-template-columns: repeat(12, 1fr);
 
         &_big {
-                font-weight: 700;
-                font-size: 64px;
-                line-height: 78px;
-                color: #FFFFFF;
-                margin-top: 217px;
-                color:#FFFFFF;
-                grid-column: span 8;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 78px;
+            color: #FFFFFF;
+            margin-top: 217px;
+            color: #FFFFFF;
+            grid-column: span 8;
         }
-    
+
         &_text {
-                font-weight: 300;
-                font-size: 18px;
-                line-height: 32px;
-                color: #FFFFFF;
-                margin-top: 32px;
-                margin-bottom: 44px;
-                grid-column: span 6;
-                height: 64px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: #FFFFFF;
+            margin-top: 32px;
+            margin-bottom: 44px;
+            grid-column: span 6;
+            height: 64px;
         }
-    
+
         &_button {
 
             &_style {
@@ -63,7 +63,7 @@ body {
                     cursor: pointer;
                     cursor: url(./img/cursor_button.svg), pointer;
                     background: #EB443F;
-                    border-radius: 30px; 
+                    border-radius: 30px;
                 }
             }
         }
@@ -173,13 +173,13 @@ body {
                     cursor: pointer;
                     cursor: url(./img/cursor_button.svg), pointer;
                     background: #EB443F;
-                    border-radius: 30px;    
+                    border-radius: 30px;
                 }
             }
         }
     }
 
-    &_svg { 
+    &_svg {
         height: 333px;
         grid-column: span 5;
         padding-left: 103px;
@@ -193,7 +193,7 @@ body {
     background-size: cover;
     background-position: center;
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 32px;
 
     &_title {
@@ -202,6 +202,8 @@ body {
         gap: 32px;
         grid-column: span 6;
         padding-left: 103px;
+        order: 8;
+        width: 100%;
 
         &_big {
             font-weight: 700;
@@ -236,18 +238,16 @@ body {
                     cursor: pointer;
                     cursor: url(./img/cursor_button.svg), pointer;
                     background: #EB443F;
-                    border-radius: 30px;    
+                    border-radius: 30px;
                 }
             }
         }
     }
 
-    &_svg { 
+    &_svg {
         height: 333px;
         grid-column: span 5;
     }
 }
 
 @import 'mobile';
-
-
