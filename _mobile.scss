@@ -137,14 +137,16 @@
     .contentThree {
         height: 800px;
         display: flex;
-        &_title{
-            &_big{
+
+        &_title {
+            &_big {
                 font-weight: 700;
                 font-size: 32px;
                 line-height: 39px;
                 text-align: center;
             }
-            &_text{
+
+            &_text {
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 22px;

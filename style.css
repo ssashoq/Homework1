@@ -22,6 +22,8 @@ body {
 .header_title {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 32px;
+       column-gap: 32px;
 }
 .header_title_big {
   font-weight: 700;
@@ -29,7 +31,7 @@ body {
   line-height: 78px;
   padding-top: 217px;
   color: #FFFFFF;
-  grid-column: span 8;
+  grid-column: span 7;
 }
 .header_title_text {
   font-weight: 300;
