@@ -27,8 +27,7 @@ body {
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
-  color: #FFFFFF;
-  margin-top: 217px;
+  padding-top: 217px;
   color: #FFFFFF;
   grid-column: span 8;
 }
@@ -42,6 +41,22 @@ body {
   grid-column: span 6;
   height: 64px;
 }
+.header_title_button_style {
+  width: 234.06px;
+  height: 48.6px;
+  background: #9C0332;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Montserrat";
+  color: #FFFFFF;
+}
+.header_title_button_style:hover {
+  background: #EB443F;
+  border-radius: 30px;
+  cursor: url(./img/cursor_button.svg), pointer;
+}
 
 .product {
   height: 556px;
@@ -51,12 +66,10 @@ body {
   background-position: center;
 }
 .product_box {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
   gap: 32px;
 }
 .product_for {
-  grid-column: span 4;
   height: 300px;
   font-weight: 600;
   font-size: 24px;
@@ -65,22 +78,30 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  padding-left: 32px;
+}
+.product_for:hover {
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
+  cursor: url(./img/cursor_button.svg), pointer;
 }
 .product_1 {
   background: url(./img/game_1.png);
   background-repeat: no-repeat;
+  width: 378px;
 }
 .product_2 {
   background: url(./img/game_2.png);
   background-repeat: no-repeat;
+  width: 378px;
 }
 .product_3 {
   background: url(./img/game_3.png);
   background-repeat: no-repeat;
+  width: 378px;
 }
 .product_title {
   padding-bottom: 32px;
+  padding-left: 32px;
 }
 .product_button_style {
   width: 234.06px;
@@ -105,6 +126,14 @@ body {
 .contentOne {
   height: 800px;
   background: url(./img/content_background_1.jpg);
+  display: flex;
+  flex-direction: row;
+  gap: 135px;
+}
+.contentOne_title {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .contentOne_title_big {
   font-weight: 700;
@@ -129,6 +158,11 @@ body {
   font-family: "Montserrat";
   color: #FFFFFF;
 }
+.contentOne_title_button_style:hover {
+  background: #EB443F;
+  border-radius: 30px;
+  cursor: url(./img/cursor_button.svg), pointer;
+}
 .contentOne_svg {
   height: 333px;
   grid-column: span 5;
@@ -137,6 +171,14 @@ body {
 .contentTwo {
   height: 800px;
   background: url(./img/content_background_2.jpg);
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 135px;
+}
+.contentTwo_title {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .contentTwo_title_big {
   font-weight: 700;
@@ -161,6 +203,11 @@ body {
   font-family: "Montserrat";
   color: #FFFFFF;
 }
+.contentTwo_title_button_style:hover {
+  background: #EB443F;
+  border-radius: 30px;
+  cursor: url(./img/cursor_button.svg), pointer;
+}
 .contentTwo_svg {
   height: 333px;
   grid-column: span 5;
@@ -172,6 +219,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+}
+.contentThree_title {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
 }
 .contentThree_title_big {
   font-weight: 700;
@@ -184,6 +239,7 @@ body {
   font-size: 18px;
   line-height: 32px;
   color: #FFFFFF;
+  text-align: center;
 }
 .contentThree_title_button_style {
   width: 234.06px;
@@ -195,6 +251,11 @@ body {
   line-height: 22px;
   font-family: "Montserrat";
   color: #FFFFFF;
+}
+.contentThree_title_button_style:hover {
+  background: #EB443F;
+  border-radius: 30px;
+  cursor: url(./img/cursor_button.svg), pointer;
 }
 
 .footer {
@@ -210,4 +271,134 @@ body {
   line-height: 15px;
   color: #FFFFFF;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    height: 735px;
+  }
+  .header_title {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .header_title_big {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    grid-column: span 4;
+    text-align: center;
+  }
+  .header_title_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    grid-column: span 4;
+    text-align: center;
+  }
+  .header_title_button {
+    display: flex;
+    justify-content: center;
+  }
+  .product {
+    height: 1221px;
+    background-position: center;
+  }
+  .product_box {
+    padding-top: 127px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .product_1 {
+    background: url(./img/mobile/Game_1.png);
+    background-repeat: no-repeat;
+    width: 343px;
+  }
+  .product_2 {
+    background: url(./img/mobile/Game_2.png);
+    background-repeat: no-repeat;
+    width: 343px;
+  }
+  .product_3 {
+    background: url(./img/mobile/Game_3.png);
+    background-repeat: no-repeat;
+    width: 343px;
+  }
+  .contentOne {
+    height: 653px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contentOne_title {
+    grid-column: span 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .contentOne_title_big {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .contentOne_title_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .contentOne_svg {
+    padding-left: 0px;
+  }
+  .contentOne_svg_1 {
+    width: 334px;
+  }
+  .contentTwo {
+    height: 653px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contentTwo_title {
+    grid-column: span 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 0px;
+    order: 0;
+  }
+  .contentTwo_title_big {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .contentTwo_title_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .contentTwo_svg_1 {
+    width: 334px;
+  }
+  .contentThree {
+    height: 800px;
+    display: flex;
+  }
+  .contentThree_title_big {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .contentThree_title_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
