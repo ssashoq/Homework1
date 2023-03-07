@@ -73,6 +73,25 @@ inputValue(n);
 
 ///////////////////////////////////////////
 
+function someValue(m) {
+    if (isNaN(m)) {
+        console.log('Такого месяца не существует!');
+    } else if (m >= 3 && m <= 5) {
+        console.log('Весна');
+    } else if (m >= 6 && m <= 8) {
+        console.log('Лето');
+    } else if (m >= 9 && m <= 11) {
+        console.log('Осень');
+    } else if (m = 12) {
+        console.log('Зима');
+    } else if (m <= 2) {
+        console.log('Зима');
+    }
+}
+
+someValue(10);
+
+
 
 
 
