@@ -35,25 +35,123 @@
 
     .product {
         height: 1221px;
+        background-position: center;
 
         &_box {
-            grid-template-columns: repeat(4, 1fr);
-            column-gap: 16px;
             padding-top: 127px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
         }
 
         &_1 {
             background: url(./img/mobile/Game_1.png);
             background-repeat: no-repeat;
+            width: 343px;
         }
 
         &_2 {
             background: url(./img/mobile/Game_2.png);
             background-repeat: no-repeat;
+            width: 343px;
         }
 
         &_3 {
             background: url(./img/mobile/Game_3.png);
             background-repeat: no-repeat;
+            width: 343px;
         }
     }
+
+    .contentOne {
+        height: 653px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_title {
+            grid-column: span 4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            &_big {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+            }
+
+            &_text {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+
+        &_svg {
+            padding-left: 0px;
+
+            &_1 {
+                width: 334px;
+            }
+        }
+    }
+
+    .contentTwo {
+        height: 653px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_title {
+            grid-column: span 4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding-left: 0px;
+            order: 0;
+
+            &_big {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+            }
+
+            &_text {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+
+        &_svg {
+            &_1 {
+                width: 334px;
+            }
+        }
+    }
+
+    .contentThree {
+        height: 800px;
+        display: flex;
+
+        &_title {
+            &_big {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            &_text {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+    }
+}
