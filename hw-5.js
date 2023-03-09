@@ -1,6 +1,6 @@
 
 function min(a, b) {
-    if (a < b, a === b) {
+    if (a <= b) {
         return a;
     } else {
         return b;
@@ -48,7 +48,7 @@ if (age < 0) {
 ////////////////////////////////////////
 
 function value(a, b) {
-    if (isNaN(a, b)) {
+    if (isNaN(a || b)) {
         console.log("Одно или оба значения не являются числом")
     } else {
         console.log(a * b);
