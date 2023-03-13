@@ -22,14 +22,15 @@ console.log(someValue);
 
 /////////////////////////////////////////
 
-let arr = [
-	[[1, 1, 1], [1, 1, 1], [1, 1, 1]],
-];
-for (let arrIn of arr) {
-	for (let element of arrIn) {
-		console.log(element);
+const arr = [];
+
+for (let i = 0; i < 3; i++) {
+	arr.push([]);
+	for (let j = 1; j <= 3; j++) {
+		arr[i].push("1");
 	}
 }
+console.log(arr);
 
 /////////////////////////////////////////////
 
@@ -52,7 +53,7 @@ let mass = [9, 8, 7, 6, 5];
 
 let userValue = prompt('Введите число от 1 до 10');
 
-const result = mass.filter(item => item == userValue);
+const result = mass.filter(item => item === userValue);
 console.log(result);
 
 ///////////////////////////////////////////////////
@@ -81,7 +82,7 @@ console.log(asd);
 ////////////////////////////////////////////////////
 
 
-let arrSum = [3,4,5,9,1];
+let arrSum = [3, 4, 5, 9, 1];
 let summa = 0;
 
 for (let i = 0; i < arrSum.length; i++) {
