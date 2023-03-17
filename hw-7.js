@@ -49,7 +49,7 @@ console.log(getRandom(11));
 ///////////////////////////
 
 function getRandomArrNumber(randValue) {
-    return Math.round(Math.random()*randValue);
+    return Math.round(Math.random() * randValue);
 }
 
 console.log(getRandomArrNumber(7));
@@ -57,7 +57,7 @@ console.log(getRandomArrNumber(7));
 /////////////////////////////
 
 function getRandomInt(minValue, maxValue) {
-    return Math.round(Math.random() * (maxValue-minValue)) + minValue;
+    return Math.round(Math.random() * (maxValue - minValue) + minValue);
 }
 
 console.log(getRandomInt(5, 10));
@@ -72,15 +72,15 @@ console.log(currentDate);
 let myDate = new Date();
 console.log(myDate);
 
-myDate.setDate(myDate.getDate()+ 73);
-console.log(myDate); 
+myDate.setDate(myDate.getDate() + 73);
+console.log(myDate);
 
 /////////////////////////////
 
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
 
 let someDate = new Date();
