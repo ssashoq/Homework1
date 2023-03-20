@@ -34,3 +34,23 @@ console.log(users);
 const arr = [1, '4', 9, 'two'];
 arr.sort((a,b)=>b-a);
 console.log(arr);
+
+///////////////////////////////
+
+const timer = (deadline) => {
+	const interval = setInterval(() => {
+		console.log(new Date);
+	}, 3000);
+
+
+	setTimeout(() => {
+    clearInterval(interval);
+    console.log('30 секунд прошло')
+  }, deadline * 3000)
+};
+
+timer(11);
+
+/////////////////////////////////
+
+
