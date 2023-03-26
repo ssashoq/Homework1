@@ -37,34 +37,51 @@ function reversArr(arr) {
 }
 
 function toNumberArr(arr) {
-	let afterFilter=arr.filter(el => !isNaN(el));
+	let afterFilter = arr.filter(el => !isNaN(el));
 	console.log(afterFilter);
 }
 
-function each(arr,callback) {
+function each(arr, callback) {
 	callback(arr)
 }
 
-each([1, '4', false, 9, 'two'],toNumberArr);
+each([1, '4', false, 9, 'two'], toNumberArr);
 
 
 ///////////////////////////////
 
-const timer = (deadline) => {
-	const interval = setInterval(() => {
-		console.log(new Date);
-}, 3000);
+// const timer = (deadline) => {
+// 	const interval = setInterval(() => {
+// 		console.log(new Date);
+// }, 3000);
 
 
-	setTimeout(() => {
-    clearInterval(interval);
-    console.log('30 секунд прошло')
-  }, deadline * 3000)
-};
+// 	setTimeout(() => {
+//     clearInterval(interval);
+//     console.log('30 секунд прошло')
+//   }, deadline * 3000)
+// };
 
-timer(11);
+// timer(11);
 
 /////////////////////////////////
 
+const calling = () => {
+	console.log('Звоню!')
+};
+
+const beeps = (callback) => {
+	setTimeout(() => {
+		console.log('Идут гудки...');
+		callback(talk);
+	}, 1000);
+}
+
+const talk = () => {
+	console.log('Разговор')
+}
+
+calling();
+beeps(talk);
 
 
