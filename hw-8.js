@@ -50,19 +50,19 @@ each([1, '4', false, 9, 'two'], toNumberArr);
 
 ///////////////////////////////
 
-// const timer = (deadline) => {
-// 	const interval = setInterval(() => {
-// 		console.log(new Date);
-// }, 3000);
+const timer = (deadline) => {
+	const interval = setInterval(() => {
+		console.log(new Date);
+}, 3000);
 
 
-// 	setTimeout(() => {
-//     clearInterval(interval);
-//     console.log('30 секунд прошло')
-//   }, deadline * 3000)
-// };
+	setTimeout(() => {
+    clearInterval(interval);
+    console.log('30 секунд прошло')
+  }, deadline * 3000)
+};
 
-// timer(11);
+timer(11);
 
 /////////////////////////////////
 
